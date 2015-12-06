@@ -1,0 +1,87 @@
+body{
+  font-family: 'Raleway', sans-serif;
+}
+
+/* Спрайт с обычной плотностью */
+
+.stitches-sprite(@x: 0, @y: 0, @width: 0, @height: 0) {
+    background-position: @x @y;
+    width: @width;
+    height: @height;
+}
+
+.sprite {
+    background-image: url(spritesheet.png);    background-repeat: no-repeat;
+    display: block;
+
+    &.sprite-ico-arrow--down {
+        .stitches-sprite(-3px, -3px, 15px, 8px);
+    }
+
+    &.sprite-ico-features--1 {
+        .stitches-sprite(-3px, -17px, 128px, 128px);
+    }
+
+    &.sprite-ico-features--2 {
+        .stitches-sprite(-3px, -151px, 128px, 128px);
+    }
+
+    &.sprite-ico-features--3 {
+        .stitches-sprite(-3px, -285px, 128px, 128px);
+    }
+
+    &.sprite-ico-features--4 {
+        .stitches-sprite(-3px, -419px, 128px, 128px);
+    }
+
+    &.sprite-ico-map-marker {
+        .stitches-sprite(-3px, -553px, 33px, 47px);
+    }
+
+    &.sprite-ico-social {
+        .stitches-sprite(-3px, -606px, 89px, 18px);
+    }
+
+    &.sprite-ico-webhost {
+        .stitches-sprite(-3px, -630px, 168px, 169px);
+    }
+}
+
+/* Спрайт с 2x плотностью */
+
+.sprite {
+    background-image: url(spritesheet.png);    background-repeat: no-repeat;
+    display: block;
+
+    &.sprite-ico-arrow--down_2x {
+        .stitches-sprite(-5px, -5px, 30px, 16px);
+    }
+
+    &.sprite-ico-features--1_2x {
+        .stitches-sprite(-5px, -31px, 256px, 256px);
+    }
+
+    &.sprite-ico-features--2_2x {
+        .stitches-sprite(-5px, -297px, 256px, 256px);
+    }
+
+    &.sprite-ico-features--3_2x {
+        .stitches-sprite(-5px, -563px, 256px, 256px);
+    }
+
+    &.sprite-ico-features--4_2x {
+        .stitches-sprite(-5px, -829px, 256px, 256px);
+    }
+
+    &.sprite-ico-map-marker_2x {
+        .stitches-sprite(-5px, -1095px, 66px, 94px);
+    }
+
+    &.sprite-ico-social_2x {
+        .stitches-sprite(-5px, -1199px, 178px, 36px);
+    }
+
+    &.sprite-ico-webhost_2x {
+        .stitches-sprite(-5px, -1245px, 336px, 338px);
+    }
+}
