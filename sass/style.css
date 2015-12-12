@@ -1,0 +1,116 @@
+p {
+  font-size: 14px;
+  line-height: 28px;
+  color: #f0f0f0;
+}
+
+.class {
+  font-size: 10px;
+}
+.class .span {
+  font-size: 20px;
+}
+
+.block {
+  display: block;
+}
+.block-element {
+  font-size: 20px;
+}
+.block-element-mod {
+  font-size: 30px;
+}
+.block-element::before {
+  content: "";
+}
+
+.class-for-import {
+  font-size: 10px;
+}
+
+h1 {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  color: #000;
+}
+
+h2 {
+  font-family: Arial, sans-serif;
+  font-size: 28px;
+  line-height: 42px;
+  color: #000;
+}
+
+.lh, h1, h2 {
+  line-height: 2;
+}
+
+h1 {
+  font-size: 10px;
+}
+
+h2 {
+  font-size: 8px;
+}
+
+.math {
+  font-size: 28px;
+  width: 33.33333%;
+}
+
+.alert {
+  font-size: 12px;
+  padding: 20px;
+  color: black;
+}
+
+.col-1 {
+  width: 8.33333%;
+}
+
+.col-2 {
+  width: 16.66667%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.33333%;
+}
+
+.col-5 {
+  width: 41.66667%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.33333%;
+}
+
+.col-8 {
+  width: 66.66667%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.33333%;
+}
+
+.col-11 {
+  width: 91.66667%;
+}
+
+.column {
+  width: 33.33333%;
+}
+
+/*# sourceMappingURL=style.css.map */

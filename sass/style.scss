@@ -1,0 +1,117 @@
+// переменные
+
+$font-size: 14px;
+$font-color: #f0f0f0;
+$string: 100%/10;
+
+p{
+  font-size: $font-size;
+  line-height: $font-size * 2;
+  color: $font-color;
+}
+
+// вложенность
+
+.class{
+  font-size: 10px;
+
+  .span{
+    font-size: 20px;
+  }
+}
+
+.block{
+  display: block;
+
+  &-element{
+    font-size: 20px;
+
+    &-mod{
+      font-size: 30px;
+    }
+
+    &::before{
+      content: "";
+    }
+  }
+}
+
+// импорт файлов
+
+@import "file-for-import";
+
+// миксины
+
+@mixin font-style($fz, $color){
+  font-family: Arial, sans-serif;
+  font-size: $fz;
+  line-height: $fz * 1.5;
+  color: $color;
+}
+
+h1{
+  @include font-style($font-size, #000);
+}
+
+h2{
+  @include font-style($font-size * 2, #000);
+}
+
+// extend
+
+.lh{
+  line-height: 2;
+}
+
+h1{
+  font-size: 10px;
+  @extend .lh;
+}
+
+h2{
+  font-size: 8px;
+  @extend .lh;
+}
+
+// Математические операции
+
+.math{
+  font-size: 14px * 2;
+  width: 100% / 12 * 4;
+}
+
+// условные выражения
+
+@mixin color($status){
+  @if $status == error {
+    color: red;
+  } @else if $status == ok {
+    color: green;
+  } @else {
+    color: black;
+  }
+}
+
+.alert{
+  font-size: 12px;
+  padding: 20px;
+  @include color(errordgf);
+}
+
+// циклы
+
+@function column-width($number){
+  @return 100% / 12 * $number;
+}
+
+@for $i from 1 to 12{
+  .col-#{$i}{
+    width: column-width($i);
+  }
+}
+
+// функции
+
+.column{
+  width: column-width(4);
+}
